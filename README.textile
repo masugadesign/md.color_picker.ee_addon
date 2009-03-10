@@ -1,0 +1,25 @@
+h1. MD Color Picker (FieldFrame FT)
+
+Make a color picker field type
+
+h2. Requirements
+
+* jQuery for the Control Panel
+* FieldFrame
+
+h2. Info
+
+Developed by Ryan Masuga, http://masugadesign.com
+
+Docs: "MD Add Sitename":http://www.masugadesign.com/the-lab/scripts/md-add-sitename/ <br />
+EE Extension Info: http://expressionengine.com/docs/development/extensions.html
+
+This does not currently work on an MSM-enabled sites when you're using the text override. The text override will override all of your site names.
+
+Also see the "original forum thread at the EE Forums":http://expressionengine.com/forums/viewthread/54996/.
+
+h2. Changelog
+
+*Version 1.0.0 (Mar 10, 2009)*
+
+* Initial Release
