@@ -1,6 +1,6 @@
 h1. MD Color Picker (FieldFrame Field Type)
 
-Make a color picker custom field type for ExpressionEngine.
+Add a jQuery-driven color picker custom field type for ExpressionEngine.
 
 h2. Requirements
 
