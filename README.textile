@@ -1,25 +1,22 @@
-h1. MD Color Picker (FieldFrame FT)
+h1. MD Color Picker (FieldFrame Field Type)
 
-Make a color picker field type
+Make a color picker custom field type for ExpressionEngine.
 
 h2. Requirements
 
-* jQuery for the Control Panel
-* FieldFrame
+* jQuery for the Control Panel (included with ExpressionEngine 1.6.5+)
+* "FieldFrame":http://github.com/brandonkelly/bk.fieldframe.ee_addon/tree/master Extension by Brandon Kelly
 
 h2. Info
 
 Developed by Ryan Masuga, http://masugadesign.com
 
-Docs: "MD Add Sitename":http://www.masugadesign.com/the-lab/scripts/md-add-sitename/ <br />
-EE Extension Info: http://expressionengine.com/docs/development/extensions.html
-
-This does not currently work on an MSM-enabled sites when you're using the text override. The text override will override all of your site names.
-
-Also see the "original forum thread at the EE Forums":http://expressionengine.com/forums/viewthread/54996/.
+Docs: "MD Color Picker":http://www.masugadesign.com/the-lab/scripts/md-color-picker/ <br />
+MD Color Picker uses the "Eyecon jQuery Colorpicker":http://www.eyecon.ro/colorpicker/ 
 
 h2. Changelog
 
 *Version 1.0.0 (Mar 10, 2009)*
 
 * Initial Release
+* Works with LG Addon Updater
