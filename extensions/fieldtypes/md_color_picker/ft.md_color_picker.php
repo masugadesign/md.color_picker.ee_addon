@@ -21,24 +21,28 @@ class Md_color_picker extends Fieldframe_Fieldtype {
         'versions_xml_url' => 'http://masugadesign.com/versions/'
     );
 
-var $hooks = array('publish_form_headers');
+	function _display_field($field_name, $field_data)
+	{
+		global $DSP;
 
-function publish_form_headers()
+		$this->include_js('js/colorpicker.js');
+		$this->include_css('css/colorpicker.css');
+
+		return $DSP->input_text($field_name, $field_data, '6', '6', 'input', '60px', '', FALSE);
+	}
+
+	/**
+	 * Display Field
+	 * 
+	 * @param  string  $field_name      The field's name
+	 * @param  mixed   $field_data      The field's current value
+	 * @param  array   $field_settings  The field's settings
+	 * @return string  The field's HTML
+	 */
+    function display_field($field_name, $field_data, $field_settings)
     {
-    $r = $this->get_last_call('') . NL . NL;
-
-		$r .= '<script src="'.FT_URL.'md_color_picker/js/colorpicker.js" type="text/javascript" charset="utf-8"></script>';
-		$r .= '<link rel="stylesheet" media="screen" type="text/css" href="'.FT_URL.'md_color_picker/css/colorpicker.css" />' .NL .NL;
-
-		return $r;
-    }
-
-    function display_field($field_name, $field_data)
-    {
-			global $DSP;
-
-			$r = '<script type="text/javascript" charset="utf-8">
-		(function($){
+		$this->insert_js('
+			(function($){
 				$(document).ready( function(){
 					$("#'.$field_name.'").ColorPicker({
 						onSubmit: function(hsb, hex, rgb) {
@@ -53,11 +57,41 @@ function publish_form_headers()
 					});
 				}); 
 			})(jQuery);
-			</script>';
-		$r .=  $DSP->input_text($field_name, $field_data, '6', '6', 'input', '60px', '', FALSE);
+		');
 
-    return $r;
+    	return $this->_display_field($field_name, $field_data);
     }
+
+	/**
+	 * Display Cell
+	 * 
+	 * @param  string  $cell_name      The cell's name
+	 * @param  mixed   $cell_data      The cell's current value
+	 * @param  array   $cell_settings  The cell's settings
+	 * @return string  The cell's HTML
+	 */
+	function display_cell($cell_name, $cell_data, $cell_settings)
+	{
+		$this->insert_js('
+			(function($){
+				$.fn.ffMatrix.onDisplayCell.md_color_picker = function(cell) {
+					$("input", cell).ColorPicker({
+						onSubmit: function(hsb, hex, rgb) {
+							$("input", cell).val(hex);
+						},
+						onBeforeShow: function () {
+							$(this).ColorPickerSetColor(this.value);
+						}
+					})
+					.bind("keyup", function(){
+						$(this).ColorPickerSetColor(this.value);
+					});
+				}; 
+			})(jQuery);
+		');
+
+		return $this->_display_field($cell_name, $cell_data);
+	}
 
 /* END class */
 }
