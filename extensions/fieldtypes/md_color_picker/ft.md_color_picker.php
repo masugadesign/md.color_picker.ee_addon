@@ -6,7 +6,7 @@ Requires the FieldFrame extension and jQuery be installed
 INFO ---------------------------
 Developed by: Ryan Masuga, masugadesign.com
 Created:   Mar 10 2009
-Last Mod:  Mar 10 2009
+Last Mod:  Mar 11 2009
 SEE: README.textile
 =============================================================================== */
 if ( ! defined('EXT')) exit('Invalid file request');
@@ -62,4 +62,4 @@ function publish_form_headers()
 /* END class */
 }
 /* End of file ft.md_color_picker.php */
-/* Location: ./system/extensions/fieldtypes/ft.md_color_picker.php */ 
+/* Location: ./system/extensions/fieldtypes/md_color_picker/ft.md_color_picker.php */ 
