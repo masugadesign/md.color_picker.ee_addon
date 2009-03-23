@@ -16,7 +16,12 @@ MD Color Picker uses the "Eyecon jQuery Colorpicker":http://www.eyecon.ro/colorp
 
 h2. Changelog
 
-*Version 1.0.0 (Mar 10, 2009)*
+*Version 1.0.1 (Mar 23, 2009)*
+
+* Will work as FF Matrix cell
+* Extension cleanup (Thanks, Brandon Kelly)
+
+Version 1.0.0 (Mar 10, 2009)
 
 * Initial Release
 * Works with LG Addon Updater

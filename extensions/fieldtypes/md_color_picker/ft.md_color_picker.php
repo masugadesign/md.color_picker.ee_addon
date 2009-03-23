@@ -1,12 +1,16 @@
 <?php
 /* ===========================================================================
 ext.md_color_picker.php ---------------------------
-Requires the FieldFrame extension and jQuery be installed
+A color picker Field Type for the ExpressionEngine control panel.
+Requirements:
+1) Brandon Kelly's FieldFrame extension 
+http://github.com/brandonkelly/bk.fieldframe.ee_addon/tree/master
+2) jQuery (for the Control Panel; extension comes bundled with ExpressionEngine)
 
 INFO ---------------------------
 Developed by: Ryan Masuga, masugadesign.com
 Created:   Mar 10 2009
-Last Mod:  Mar 11 2009
+Last Mod:  Mar 23 2009
 SEE: README.textile
 =============================================================================== */
 if ( ! defined('EXT')) exit('Invalid file request');
@@ -15,7 +19,7 @@ class Md_color_picker extends Fieldframe_Fieldtype {
 
     var $info = array(
         'name'             => 'MD Color Picker',
-        'version'          => '1.0.0',
+        'version'          => '1.0.1',
         'desc'             => 'Provides a color picker custom field',
         'docs_url'         => 'http://masugadesign.com/the-lab/scripts/md-color-picker/',
         'versions_xml_url' => 'http://masugadesign.com/versions/'
