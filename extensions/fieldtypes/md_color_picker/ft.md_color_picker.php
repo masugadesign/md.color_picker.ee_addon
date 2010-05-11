@@ -10,7 +10,7 @@ http://github.com/brandonkelly/bk.fieldframe.ee_addon/tree/master
 INFO ---------------------------
 Developed by: Ryan Masuga, masugadesign.com
 Created:   Mar 10 2009
-Last Mod:  Mar 23 2009
+Last Mod:  May 10 2010
 SEE: README.textile
 =============================================================================== */
 if ( ! defined('EXT')) exit('Invalid file request');
@@ -19,10 +19,11 @@ class Md_color_picker extends Fieldframe_Fieldtype {
 
     var $info = array(
         'name'             => 'MD Color Picker',
-        'version'          => '1.0.1',
+        'version'          => '1.0.2',
         'desc'             => 'Provides a color picker custom field',
         'docs_url'         => 'http://masugadesign.com/the-lab/scripts/md-color-picker/',
-        'versions_xml_url' => 'http://masugadesign.com/versions/'
+        'versions_xml_url' => 'http://masugadesign.com/versions/',
+        'no_lang' => TRUE
     );
 
 	function _display_field($field_name, $field_data)
