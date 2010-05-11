@@ -11,12 +11,16 @@ h2. Info
 
 Developed by Ryan Masuga, http://masugadesign.com
 
-Docs: "MD Color Picker":http://www.masugadesign.com/the-lab/scripts/md-color-picker/ <br />
+Docs: "MD Color Picker":http://masugadesign.com/the-lab/scripts/md-color-picker/ <br />
 MD Color Picker uses the "Eyecon jQuery Colorpicker":http://www.eyecon.ro/colorpicker/ 
 
 h2. Changelog
 
-*Version 1.0.1 (Mar 23, 2009)*
+*Version 1.0.2 (May 10, 2010)*
+
+* Added "no lang" to $info array for Matrix 2
+
+Version 1.0.1 (Mar 23, 2009)
 
 * Will work as FF Matrix cell
 * Extension cleanup (Thanks, Brandon Kelly)
