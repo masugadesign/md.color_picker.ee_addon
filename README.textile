@@ -1,11 +1,10 @@
-h1. MD Color Picker (FieldFrame Field Type)
+h1. MD Color Picker (EE2 Field Type)
 
 Add a jQuery-driven color picker custom field type for ExpressionEngine.
 
 h2. Requirements
 
-* jQuery for the Control Panel (included with ExpressionEngine 1.6.5+)
-* "FieldFrame":http://github.com/brandonkelly/bk.fieldframe.ee_addon/tree/master Extension by Brandon Kelly
+* ExpressionEngine 2.1+
 
 h2. Info
 
@@ -16,16 +15,6 @@ MD Color Picker uses the "Eyecon jQuery Colorpicker":http://www.eyecon.ro/colorp
 
 h2. Changelog
 
-*Version 1.0.2 (May 10, 2010)*
-
-* Added "no lang" to $info array for Matrix 2
-
-Version 1.0.1 (Mar 23, 2009)
-
-* Will work as FF Matrix cell
-* Extension cleanup (Thanks, Brandon Kelly)
-
-Version 1.0.0 (Mar 10, 2009)
+Version 1.0.0 (Aug 19, 2010)
 
 * Initial Release
-* Works with LG Addon Updater
