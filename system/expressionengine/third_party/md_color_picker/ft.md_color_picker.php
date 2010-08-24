@@ -14,7 +14,7 @@ class Md_color_picker_ft extends EE_Fieldtype
 {
 	var $info = array(
 	    'name'             => 'MD Color Picker',
-	    'version'          => '1.0.2'
+	    'version'          => '1.0.3'
 	);
     
 	function Md_color_picker_ft()
@@ -38,7 +38,7 @@ class Md_color_picker_ft extends EE_Fieldtype
 	
 		return form_input(array(
 			'name' => $name,
-			'data' => $data,
+			'value' => $data,
 			'size' => '6',
 			'maxlength' => '6',
 			'class' => 'input',
